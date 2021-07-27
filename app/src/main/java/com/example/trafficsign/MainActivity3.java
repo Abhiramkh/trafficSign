@@ -34,6 +34,7 @@ public class MainActivity3 extends AppCompatActivity {
     private Button pic1;
     private TextView result;
     ArrayList<String> list = new ArrayList<String>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,6 +93,7 @@ public class MainActivity3 extends AppCompatActivity {
         if (requestCode == 100) {
             img = (Bitmap) data.getExtras().get("data");
             imgView.setImageBitmap(img);
+
             predict();
         }
     }
@@ -135,5 +137,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
         return ind;
     }
+
+
 
 }
